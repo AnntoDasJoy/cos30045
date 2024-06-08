@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Physicians Data Visualization</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        .axis text {
+            font-size: 10px;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 6px;
+            font-size: 12px;
+            background: lightsteelblue;
+            border: 0;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+        .chart {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="heatmap" class="chart"></div>
+        <div id="radial-chart" class="chart"></div>
+        <div id="scatter-plot" class="chart"></div>
+    </div>
+    <script src="heatmap.js"></script>
+    <script src="radial_stacked_bar.js"></script>
+    <script src="grad.js"></script>
+</body>
+</html>
